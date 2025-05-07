@@ -19,4 +19,40 @@ Düzlemdeki noktaların üzerinden polar açılarının sırasıyla geçilir.Nok
 
 O(n)+O(nlogn)+O(n)=O(nlogn) olduğundan dolayı **Zaman Karmaşıklığı** O(nlogn)'dir. **Alan Karmaşıklığı** O(n)'dir.
 
+# Graham Scan Algoritması Nerelerde Kullanılır?
+Graham scan  algoritmasının zaman karmaşıklığı O(nlogn)'dir. Bu yüzden çok büyük veri setlerinde daha verimli algoritmalar trecih edilebilir.
+
+**Bilgisayar Grafikleri**
+-2D/3D modellemelerde nesnelerin dış sınırlarının oluşturulmasında
+-3D modellemelerde görünmeyen yüzeylerin kaldırılmasında 
+*örnek*= 3D bir modelin gölgelendirmesinde convex hull kullanılabilir.
+
+**Robotik**
+-Çevresel sınır belirleme
+-Engel tespiti
+-Hareket planlama
+*örnek*= sınırlı alanda ilerlemek isteyen bir insansız hava aracı(drone)'un gidebileceği maximum mesafe convex hull ile hesaplanabilir.
+
+**Coğrafi Bilgi Sistemleri (GIS)**
+-Konumsal sınır belirleme
+-Navigasyon
+-Uydu görüntülerinde şekil analizi
+*Örnek*= Konyadaki verimli tarım alanlarının belirlenmesi ve bu alanlara göre planlı tarım yapılması convex hull ile belirlenebilir.
+
+**CAD/CAM**
+-2D/3D nesneler üretilirken dış yüzeylerin belirlenmesinde
+*Örnek*=Tasarımcıların tasarladıklarının üretilmesinin mümkün olup olmadığını belirlemede convex hull kullanılabilir.
+
+**Çarpışma Analizi**
+-oyunlarda ve fizik simulasyonlarında çarpışma tespiti
+*Örnek*= Bir fabrikada farklı işlevdeki iki robotun aynı işi yaparken çarpışmaması için convex hull kullanılabilir.
+
+**Örüntü Tanıma(Pattern Recognizition)**
+-görsellerdeki desenlerin çevresini sınırlama
+*Örnek*=Seri üretim yapılan bir fabrikada defolu ürünlerin tespitinde kullanılabilir.
+
+# Kaynakça
+
+
+
 
