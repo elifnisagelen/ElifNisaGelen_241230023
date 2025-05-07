@@ -52,6 +52,9 @@ Graham scan  algoritmasının zaman karmaşıklığı O(nlogn)'dir. Bu yüzden �
 *Örnek*=Seri üretim yapılan bir fabrikada defolu ürünlerin tespitinde kullanılabilir.
 
 # Kaynakça
+1. de Berg, M., van Kreveld, M., Overmars, M., & Schwarzkopf, O. (2008). *Computational Geometry: Algorithms and Applications* (3rd ed.). Springer.  
+2. Akgül, B., & Kutucu, H. (2015). Convex Hull Problemine Genel Bakış: Algoritmalar ve Karmaşıklıkları. *Akademik Bilişim 2015 - XVII. Akademik Bilişim Konferansı Bildirileri*, 4-6 Şubat 2015, Eskişehir.  
+3. Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). *Introduction to Algorithms* (3rd ed.). MIT Press.
 
 
 
