@@ -3,7 +3,7 @@
 Bu proje Convex Hull problemini çözmek için ***Graham Scan*** algoritmasını inceler ve **C++** dilinde uygular.
 
 
-##Convex Hull Problemi
+#Convex Hull Problemi
 Convex Hull, düzlemde sonlu sayıda noktayı içine alan ve en küçük alanı kaplayan dışbükey çokgeni oluşturma problemi olarak tanımlanır.Convex Hull problemi, hesaplamalı geometri alanında ilk işlenilen problemlerden biridir. Bilgisayar grafikleri, CAD/CAM uygulamaları, çarpışma analizi, şekil analizi,örüntü tanıma, görüntü işleme gibi birçok alanda kullanılmaktadır.
 
 
