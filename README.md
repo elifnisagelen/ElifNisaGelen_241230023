@@ -4,51 +4,55 @@
 Bu proje Convex Hull problemini çözmek için ***Graham Scan*** algoritmasını inceler ve **C++** dilinde uygular.
 
 
-# Convex Hull Problemi
-Convex Hull, düzlemde sonlu sayıda noktayı içine alan ve en küçük alanı kaplayan dışbükey çokgeni oluşturma problemi olarak tanımlanır.Convex Hull problemi, hesaplamalı geometri alanında ilk işlenilen problemlerden biridir. Bilgisayar grafikleri, CAD/CAM uygulamaları, çarpışma analizi, şekil analizi,örüntü tanıma, görüntü işleme gibi birçok alanda kullanılmaktadır.
+## Convex Hull Problemi
+Convex Hull, düzlemde sonlu sayıda noktayı içine alan ve en küçük alanı kaplayan dışbükey çokgeni oluşturma problemi olarak tanımlanır.Convex Hull problemi, hesaplamalı geometri alanında ilk işlenilen problemlerden biridir. **Bilgisayar grafikleri, CAD/CAM uygulamaları, çarpışma analizi, şekil analizi,örüntü tanıma, görüntü işleme** gibi birçok alanda kullanılmaktadır.
 
 
-# Graham Scan Algoritması ve İşleyişi
+## Graham Scan Algoritması ve İşleyişi
 *Graham Scan* algoritması, 1972 yılında R.L GRAHAM tarafından yayınlanmıştır."Bir sonraki nokta her zaman iki önceki noktanın aynı yönünde olması" prensibine dayanarak çalışmaktadır.
 
-İlk olarak sınırlı düzlemdeki tüm noktaların üzerinden geçilerek **pivot** noktası seçilir.**Pivot** noktası y-ekseni değeri en düşük nokta olarak seçilir.Bu nokta **daima** convex hull içinde olur.
+### Adımlar
+1. Sınırlı düzlemdeki tüm noktaların üzerinden geçilerek **pivot** noktası seçilir.**Pivot** noktası y-ekseni değeri en düşük nokta olarak seçilir.Bu nokta **daima** convex hull içinde olur.
 Bu işlemin maliyeti O(n)'dir.
 
-Sonrasında düzlemdeki noktaların *"polar açıları"* bulunur.*Polar açılar* sıralama algoritmaları ile sıralanır.En büyük polar açıya sahip olan nokta **Convex Hull'un** ikinci noktası olarak seçilir.Bu adım en iyi ihtimalde O(nlogn) karmaşıklığa sahiptir.
+2. Düzlemdeki noktaların *"polar açıları"* bulunur.*Polar açılar* sıralama algoritmaları ile sıralanır.En büyük polar açıya sahip olan nokta **Convex Hull'un** ikinci noktası olarak seçilir.Bu adım en iyi ihtimalde O(nlogn) karmaşıklığa sahiptir.
 
-Düzlemdeki noktaların üzerinden polar açılarının sırasıyla geçilir.Noktaların yönlerine bakılır.Aynı yönde ilerleyen noktalar **Convex Hull'a** eklenir.Bu admın maliyeti maximum O(n)'dir.
+3. Düzlemdeki noktaların üzerinden polar açılarının sırasıyla geçilir.Noktaların yönlerine bakılır.Aynı yönde ilerleyen noktalar **Convex Hull'a** eklenir.Bu admın maliyeti maximum O(n)'dir.
 
-O(n)+O(nlogn)+O(n)=O(nlogn) olduğundan dolayı **Zaman Karmaşıklığı** O(nlogn)'dir. **Alan Karmaşıklığı** O(n)'dir.
+### Zaman ve Alan Karmaşıklığı
+
+-O(n)+O(nlogn)+O(n)=O(nlogn) olduğundan dolayı **Zaman Karmaşıklığı** O(nlogn)'dir.
+-**Alan Karmaşıklığı** O(n)'dir.
 
 # Graham Scan Algoritması Nerelerde Kullanılır?
-Graham scan  algoritmasının zaman karmaşıklığı O(nlogn)'dir. Bu yüzden çok büyük veri setlerinde daha verimli algoritmalar trecih edilebilir.
+Graham scan  algoritmasının zaman karmaşıklığı O(nlogn)'dir. Bu yüzden çok büyük veri setlerinde daha verimli algoritmalar tercih edilebilir.
 
 **Bilgisayar Grafikleri**
--2D/3D modellemelerde nesnelerin dış sınırlarının oluşturulmasında
--3D modellemelerde görünmeyen yüzeylerin kaldırılmasında 
+-2D/3D modellemelerde nesnelerin dış sınırlarının oluşturulmasında.
+-3D modellemelerde görünmeyen yüzeylerin kaldırılmasında. 
 
 
 **Robotik**
--Çevresel sınır belirleme
--Engel tespiti
--Hareket planlama
+-Çevresel sınır belirleme.
+-Engel tespiti.
+-Hareket planlama.
 
 **Coğrafi Bilgi Sistemleri (GIS)**
--Konumsal sınır belirleme
--Navigasyon
--Uydu görüntülerinde şekil analizi
+-Konumsal sınır belirleme.
+-Navigasyon Uygulamaları.
+-Uydu görüntülerinde şekil analizi.
 
 
 **CAD/CAM**
--2D/3D nesneler üretilirken dış yüzeylerin belirlenmesinde
+-2D/3D nesneler üretilirken dış yüzeylerin belirlenmesi.
 
 
 **Çarpışma Analizi**
--oyunlarda ve fizik simulasyonlarında çarpışma tespiti
+-oyunlarda ve fizik simulasyonlarında çarpışma tespiti.
 
 
 **Örüntü Tanıma(Pattern Recognizition)**
--görsellerdeki desenlerin çevresini sınırlama
+-görsellerdeki desenlerin çevresini sınırlama.
 
 
 # Graham Scan Kod Örneği
