@@ -51,6 +51,10 @@ Graham scan  algoritmasının zaman karmaşıklığı O(nlogn)'dir. Bu yüzden �
 -görsellerdeki desenlerin çevresini sınırlama
 
 
+# Graham Scan Kod Örneği
+Kod dosyasına ulasmak icin [buraya](src/grahamscan|eng.cpp) tıklayınız.
+
+
 # Kaynakça
 1. de Berg, M., van Kreveld, M., Overmars, M., & Schwarzkopf, O. (2008). *Computational Geometry: Algorithms and Applications* (3rd ed.). Springer.  
 2. Akgül, B., & Kutucu, H. (2015). Convex Hull Problemine Genel Bakış: Algoritmalar ve Karmaşıklıkları. *Akademik Bilişim 2015 - XVII. Akademik Bilişim Konferansı Bildirileri*, 4-6 Şubat 2015, Eskişehir.  
