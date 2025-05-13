@@ -52,7 +52,7 @@ Graham scan  algoritmasının zaman karmaşıklığı O(nlogn)'dir. Bu yüzden �
 
 
 # Graham Scan Kod Örneği
-Kod dosyasına ulasmak icin [buraya](src/grahamscan|eng.cpp) tıklayınız.
+Kod dosyasına ulaşmak için [buraya](src/grahamscan_eng.cpp) tıklayınız.
 
 
 # Kaynakça
