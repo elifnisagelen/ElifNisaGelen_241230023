@@ -10,7 +10,7 @@ Convex Hull, düzlemde sonlu sayıda noktayı içine alan ve en küçük alanı 
 # Graham Scan Algoritması ve İşleyişi
 *Graham Scan* algoritması, 1972 yılında R.L GRAHAM tarafından yayınlanmıştır."Bir sonraki nokta her zaman iki önceki noktanın aynı yönünde olması" prensibine dayanarak çalışmaktadır.
 
-İlk olarak sınırlı düzlemdeki tüm noktaların üzerinden geçilerek **pivot** noktası seçilir.**Pivot** noktası genellikle y-ekseni değeri en düşük nokta olarak seçilir.Bu nokta **daima** convex hull içinde olur.
+İlk olarak sınırlı düzlemdeki tüm noktaların üzerinden geçilerek **pivot** noktası seçilir.**Pivot** noktası y-ekseni değeri en düşük nokta olarak seçilir.Bu nokta **daima** convex hull içinde olur.
 Bu işlemin maliyeti O(n)'dir.
 
 Sonrasında düzlemdeki noktaların *"polar açıları"* bulunur.*Polar açılar* sıralama algoritmaları ile sıralanır.En büyük polar açıya sahip olan nokta **Convex Hull'un** ikinci noktası olarak seçilir.Bu adım en iyi ihtimalde O(nlogn) karmaşıklığa sahiptir.
@@ -25,31 +25,30 @@ Graham scan  algoritmasının zaman karmaşıklığı O(nlogn)'dir. Bu yüzden �
 **Bilgisayar Grafikleri**
 -2D/3D modellemelerde nesnelerin dış sınırlarının oluşturulmasında
 -3D modellemelerde görünmeyen yüzeylerin kaldırılmasında 
-*örnek*= 3D bir modelin gölgelendirmesinde convex hull kullanılabilir.
+
 
 **Robotik**
 -Çevresel sınır belirleme
 -Engel tespiti
 -Hareket planlama
-*örnek*= sınırlı alanda ilerlemek isteyen bir insansız hava aracı(drone)'un gidebileceği maximum mesafe convex hull ile hesaplanabilir.
 
 **Coğrafi Bilgi Sistemleri (GIS)**
 -Konumsal sınır belirleme
 -Navigasyon
 -Uydu görüntülerinde şekil analizi
-*Örnek*= Konyadaki verimli tarım alanlarının belirlenmesi ve bu alanlara göre planlı tarım yapılması convex hull ile belirlenebilir.
+
 
 **CAD/CAM**
 -2D/3D nesneler üretilirken dış yüzeylerin belirlenmesinde
-*Örnek*=Tasarımcıların tasarladıklarının üretilmesinin mümkün olup olmadığını belirlemede convex hull kullanılabilir.
+
 
 **Çarpışma Analizi**
 -oyunlarda ve fizik simulasyonlarında çarpışma tespiti
-*Örnek*= Bir fabrikada farklı işlevdeki iki robotun aynı işi yaparken çarpışmaması için convex hull kullanılabilir.
+
 
 **Örüntü Tanıma(Pattern Recognizition)**
 -görsellerdeki desenlerin çevresini sınırlama
-*Örnek*=Seri üretim yapılan bir fabrikada defolu ürünlerin tespitinde kullanılabilir.
+
 
 # Kaynakça
 1. de Berg, M., van Kreveld, M., Overmars, M., & Schwarzkopf, O. (2008). *Computational Geometry: Algorithms and Applications* (3rd ed.). Springer.  
