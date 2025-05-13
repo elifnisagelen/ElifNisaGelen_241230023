@@ -1,4 +1,5 @@
-# GrahamScan_ArastirmaOdevi
+**Elif Nisa Gelen** **241230023** **KTUN YZMÖ**
+# Convex Hull Arastirma Odevi
 
 Bu proje Convex Hull problemini çözmek için ***Graham Scan*** algoritmasını inceler ve **C++** dilinde uygular.
 
